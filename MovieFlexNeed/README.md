@@ -9,7 +9,36 @@ Infinite Scrolling: Automatically load more movies as the user scrolls down.
 Error Handling: Display appropriate messages for network errors and empty data.
 Responsive Design: Ensure that the app looks good on different screen sizes.
 Smooth UI: Custom UI components and smooth animations.
+
 Installation
+Installation
+Prerequisites
+Before running the app, ensure you have the following installed:
+
+Node.js: You can download it from nodejs.org.
+Android Studio: Includes Android SDK. Follow this guide for installation.
+Java Development Kit (JDK): Ensure JDK 11 or later is installed. Set the JAVA_HOME environment variable.
+Setting Up Android SDK and JDK
+Install Android Studio: Download and install Android Studio. Ensure the Android SDK and Android Virtual Device (AVD) components are included.
+
+Set Up the SDK and JDK Paths:
+
+Android SDK: Verify the path (e.g., C:\Users\<YourUsername>\AppData\Local\Android\Sdk on Windows or /Users/<YourUsername>/Library/Android/sdk on macOS).
+JDK: Install JDK 11 or later and set JAVA_HOME to the JDK installation directory.
+Update Environment Variables:
+
+Windows:
+Open System Properties > Environment Variables.
+Add ANDROID_HOME variable pointing to the SDK path.
+Add JAVA_HOME variable pointing to the JDK path.
+Add platform-tools and tools directories to the PATH variable.
+
+macOS/Linux:
+Edit your shell profile file (.bash_profile, .zshrc, or .bashrc) and add:
+export ANDROID_HOME=~/Library/Android/sdk
+export JAVA_HOME=/path/to/jdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+
 
 Clone the Repository:
 git clone https://github.com/shanku01/MovieFlex
@@ -17,6 +46,10 @@ cd MovieFlex
 
 Install Dependencies:
 npm install
+
+Install React Native CLI
+If you haven’t already installed the React Native CLI, do so with the following command:
+npm install -g react-native-cli
 
 Run the App:
 
@@ -83,6 +116,6 @@ git push origin your-feature-branch
 Create a Pull Request on GitHub.
 
 Contact
-For any questions or issues, please contact shashankpradhan@example.com.
+For any questions or issues, don't hesitate to get in touch with shashankpradhan911@gmail.com.
 
 Feel free to make any additional modifications as needed!
